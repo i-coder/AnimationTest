@@ -16,7 +16,11 @@
 
 @implementation EAAnimAgent
 
-- (void) getAnimation:(NSDictionary*) dictionary {
+- (void) getAnimation:(NSString*) string {
+    
+    //путь к plist
+    NSString *filePath = [[NSBundle mainBundle] pathForAuxiliaryExecutable:string];
+    NSDictionary* dictionary = [NSDictionary dictionaryWithContentsOfFile:filePath];
     
     [self getAllKeysFromDict:dictionary];
     

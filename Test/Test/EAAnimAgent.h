@@ -10,6 +10,6 @@
 
 @interface EAAnimAgent : UIImageView
 
-- (void) getAnimation:(NSDictionary*) dictionary;
+- (void) getAnimation:(NSString*) string;
 
 @end
