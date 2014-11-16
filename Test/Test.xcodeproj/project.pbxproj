@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1203ABD51A17C9C400AC6100 /* EAAnimAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1203ABD41A17C9C400AC6100 /* EAAnimAgent.m */; };
 		121BDBCC1A17B17B0037E76F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 121BDBCB1A17B17B0037E76F /* main.m */; };
 		121BDBCF1A17B17B0037E76F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 121BDBCE1A17B17B0037E76F /* AppDelegate.m */; };
 		121BDBD21A17B17B0037E76F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 121BDBD11A17B17B0037E76F /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		121BDBD71A17B17B0037E76F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 121BDBD61A17B17B0037E76F /* Images.xcassets */; };
 		121BDBDA1A17B17B0037E76F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121BDBD81A17B17B0037E76F /* LaunchScreen.xib */; };
 		121BDBE61A17B17B0037E76F /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 121BDBE51A17B17B0037E76F /* TestTests.m */; };
+		121BDE711A17C1F10037E76F /* game1_table_apple_one.plist in Resources */ = {isa = PBXBuildFile; fileRef = 121BDE6F1A17C1F10037E76F /* game1_table_apple_one.plist */; };
+		121BDE721A17C1F10037E76F /* game1_table_apple_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 121BDE701A17C1F10037E76F /* game1_table_apple_one.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1203ABD31A17C9C400AC6100 /* EAAnimAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAAnimAgent.h; sourceTree = "<group>"; };
+		1203ABD41A17C9C400AC6100 /* EAAnimAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAAnimAgent.m; sourceTree = "<group>"; };
 		121BDBC61A17B17B0037E76F /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		121BDBCA1A17B17B0037E76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		121BDBCB1A17B17B0037E76F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		121BDBDF1A17B17B0037E76F /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		121BDBE41A17B17B0037E76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		121BDBE51A17B17B0037E76F /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+		121BDE6F1A17C1F10037E76F /* game1_table_apple_one.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = game1_table_apple_one.plist; sourceTree = "<group>"; };
+		121BDE701A17C1F10037E76F /* game1_table_apple_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game1_table_apple_one.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,8 @@
 		121BDBC81A17B17B0037E76F /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				121BDE731A17C2280037E76F /* Animation */,
+				121BDE6E1A17C1F10037E76F /* Source */,
 				121BDBCD1A17B17B0037E76F /* AppDelegate.h */,
 				121BDBCE1A17B17B0037E76F /* AppDelegate.m */,
 				121BDBD01A17B17B0037E76F /* ViewController.h */,
@@ -117,6 +126,24 @@
 				121BDBE41A17B17B0037E76F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		121BDE6E1A17C1F10037E76F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				121BDE6F1A17C1F10037E76F /* game1_table_apple_one.plist */,
+				121BDE701A17C1F10037E76F /* game1_table_apple_one.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		121BDE731A17C2280037E76F /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1203ABD31A17C9C400AC6100 /* EAAnimAgent.h */,
+				1203ABD41A17C9C400AC6100 /* EAAnimAgent.m */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				121BDBD51A17B17B0037E76F /* Main.storyboard in Resources */,
+				121BDE711A17C1F10037E76F /* game1_table_apple_one.plist in Resources */,
 				121BDBDA1A17B17B0037E76F /* LaunchScreen.xib in Resources */,
+				121BDE721A17C1F10037E76F /* game1_table_apple_one.png in Resources */,
 				121BDBD71A17B17B0037E76F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				121BDBD21A17B17B0037E76F /* ViewController.m in Sources */,
+				1203ABD51A17C9C400AC6100 /* EAAnimAgent.m in Sources */,
 				121BDBCF1A17B17B0037E76F /* AppDelegate.m in Sources */,
 				121BDBCC1A17B17B0037E76F /* main.m in Sources */,
 			);
@@ -412,6 +442,7 @@
 				121BDBEB1A17B17B0037E76F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		121BDBEC1A17B17B0037E76F /* Build configuration list for PBXNativeTarget "TestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				121BDBEE1A17B17B0037E76F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

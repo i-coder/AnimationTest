@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EAAnimAgent.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    EAAnimAgent* appleAnimation = [[EAAnimAgent alloc] initWithFrame:self.view.bounds];
+    [appleAnimation getAnimation:[NSDictionary dictionaryWithContentsOfFile:@"/Users/andrejezov/Desktop/AnimationTest/Test/Test/Source/game1_table_apple_one.plist"]];
+    [self.view addSubview:appleAnimation];
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
